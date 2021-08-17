@@ -62,4 +62,4 @@ app.post("/profile", (req, res) => {
 //     console.log(err);
 //   });
 
-app.listen(process.env.port || 3000, () => console.log("Server Runnnig!!"));
+app.listen(process.env.PORT || 3000, () => console.log("Server Runnnig!!"));
