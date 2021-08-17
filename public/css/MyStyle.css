@@ -1,0 +1,26 @@
+.showCase
+{
+    padding: 15vh;   
+}
+
+hr
+{
+    width: 90%;
+}
+
+.showCase div{
+    flex-direction: column;
+}
+
+.card
+{
+    background: rgba(0,0,0,0.2);
+    transition-property: transform,box-shadow;
+    transition-duration: 300ms;
+}
+
+.card:hover
+{
+    transform: scale(102%);
+    box-shadow: 1px 2px 8px black;
+}

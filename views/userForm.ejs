@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/fStyle.css">
+</head>
+<body>
+    <h1 class="display-5 mb-4">Enter details</h1>
+    <form class="bg-light mx-2" method="POST" action="/profile">
+        <div class="row g-3 mb-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name" name="newUser[firstName]" required>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name" name="newUser[lastName]" required>
+            </div>
+        </div>
+        <div class="mb-3">
+            <p>Gender</p>
+            <input type="radio" name="newUser[gender]" value="Male" id="forMale">
+            <label for="forMale">Male</label>
+            <input type="radio" name="newUser[gender]" value="Female" id="forFemale">
+            <label for="forFemale">Female</label>
+            <input type="radio" name="newUser[gender]" value="Cannot Say" id="forAny">
+            <label for="forAny">Cannot Say</label>
+        </div>
+        <div class="mb-3">
+            <input class="form-control" type="number" name="newUser[age]" placeholder="Enter Age" min="1" max="1000" required>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" name="newUser[photo]" placeholder="Profile Image Url (Optional)">
+        </div>
+        <select class="form-select mb-3" name="newUser[nationality]" required>
+            <option selected disabled value="">Nationality</option>
+            <option value="Indian">Indian</option>
+            <option value="USA">USA</option>
+            <option value="Others">Others</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="/" class="btn btn-secondary">Home</a>
+    </form>
+</body>
+</html>
