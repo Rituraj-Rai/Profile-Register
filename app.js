@@ -6,7 +6,7 @@ const express = require("express"),
 const User = require("./models/userSchema");
 const db = mongoose.connection;
 
-mongoose.connect(MONGODB_URI, {
+mongoose.connect( "mongodb+srv://dbuser1:dbu1@R007@cluster001.vp15q.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
