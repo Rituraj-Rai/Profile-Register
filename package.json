@@ -10,7 +10,8 @@
   "main": "app.js",
   "devDependencies": {},
   "scripts": {
-    "test": "npm start"
+    "test": "npm start",
+    "start": "node app.js"
   },
   "author": "Rituraj",
   "license": "ISC"
