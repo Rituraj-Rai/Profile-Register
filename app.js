@@ -3,10 +3,12 @@ const express = require("express"),
   path = require("path"),
   mongoose = require("mongoose");
 
+require("dotenv").config();
+
 const User = require("./models/userSchema");
 const db = mongoose.connection;
 
-mongoose.connect( "mongodb+srv://dbuser1:dbu1@R007@cluster001.vp15q.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
+mongoose.connect( process.env.MONGODB_ACCESS, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -62,4 +64,4 @@ app.post("/profile", (req, res) => {
 //     console.log(err);
 //   });
 
-app.listen(process.env.PORT || 3000, () => console.log("Server Runnnig!!"));
+app.listen(process.env.PORT || 3000, () => console.log(`Server Runnnig!! on Port: ${process.env.PORT}`));
