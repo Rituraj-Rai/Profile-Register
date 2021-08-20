@@ -1,0 +1,35 @@
+body
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#strip
+{
+    background: rgba(35, 0, 0, 0.2);
+    /* backdrop-filter: opacity(80%); */
+    backdrop-filter: blur(3px);
+}
+
+.list-group-item{
+    background-color: transparent;
+}
+
+div img{
+    width: 40%;
+}
+
+.btn-warning{
+    width: max-content;
+    background-color: rgba(35, 0, 0, 0.2);
+    border: none;
+}
